@@ -7,7 +7,7 @@ const  About = () => {
     <div id='about' className="w-full px-10 sm:px-15 lg:px-25 py-24 scroll-mt-20">
 
 
-    <div className='flex w-full flex-col lg:flex-row items-top gap-20'>
+    <div className='flex w-full flex-col lg:flex-row items-start gap-10'>
         {/* left hand side */}
         <div className='w-full lg:w-2/5'>
             <h1 className='text-4xl sm:text-4xl md:text-4xl lg:text-5xl mb-3 inter-bold'>
