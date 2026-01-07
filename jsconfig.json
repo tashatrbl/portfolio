@@ -1,7 +1,17 @@
 {
-  "compilerOptions": {
+"compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
-  }
+    },
+    "ignoreDeprecations": "6.0"
+  },
+  "include": [
+    "app",
+    "components",
+    "assets",
+    "pages",
+    "src",
+    "next-env.d.ts"
+  ]
 }
