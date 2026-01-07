@@ -14,15 +14,7 @@ const Projects = () => {
       </h1>
 
       {/* Grid controls overall card width */}
-      <div className="
-        grid
-        grid-cols-1
-        sm:grid-cols-2
-        lg:grid-cols-3
-        gap-6
-        p-2
-        pl-8
-        pr-8
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2 px-8 py-2
       ">
         {projects.map(({ name, desc, link, tech, snippet }, index) => (
           <div
@@ -41,7 +33,7 @@ const Projects = () => {
             "
           >
             {/* Image */}
-            <div className="h-60 w-full border-b border-pink-dark">
+            <div className="h-60 w-relative border-b border-pink-dark">
               <Image
                 src={snippet}
                 alt={name}

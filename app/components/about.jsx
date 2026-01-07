@@ -4,8 +4,7 @@ import Image from 'next/image'
 
 const  About = () => {
   return (
-    <div id='about' className="w-full px-10 sm:px-15 lg:px-25 py-24 scroll-mt-20">
-
+    <div id='about' className="w-full px-10 sm:px-14 lg:px-24 py-24 scroll-mt-20 min-h-screen">
 
     <div className='flex w-full flex-col lg:flex-row items-start gap-10'>
         {/* left hand side */}
@@ -15,7 +14,7 @@ const  About = () => {
             </h1>
 
             <div className='border-[0.5px] border-pink-dark bg-cream rounded-2xl p-6 mt-5 mb-5 cursor-pointer transition-transform duration-200 hover:-translate-y-1 hover:shadow-md'>
-            <p className='text-2xl sm:text-2xl md:text-2xl lg:text:xl mb-3 instrument-serif-regular leading-snug'>
+            <p className='text-2xl sm:text-2xl md:text-2xl lg:text-xl mb-3 instrument-serif-regular leading-snug'>
                 tasha is a recent <i>Computer Science with Artificial Intelligence</i> graduate from <i>University of 
                 Nottingham Malaysia</i>. she's an avid tech lover with a strong passion in AI, Software Development 
                 and cats!
@@ -48,7 +47,7 @@ const  About = () => {
                 work experience
             </h1>
 
-        <ul className="flex flex-col gap-4 text-xl sm:text-md md:text-md lg:text:md">
+        <ul className="flex flex-col gap-4 text-xl sm:text-md md:text-md lg:text-md">
         {workexp.map(({ company, location, length, jobtitle, desc1, desc2 }, index) => (
             <li key={index}>
             <div className="border-[0.5px] border-pink-dark bg-cream rounded-md p-4 transition-transform duration-200 hover:-translate-y-1 hover:shadow-md">
