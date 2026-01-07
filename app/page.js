@@ -8,22 +8,22 @@ import Contact from "./components/contact";
 
 export default function Home() {
   return (
-    <>
-      <div className="flex justify-center py-3">
-      <Navbar/>
+    <div className="flex flex-col">
+      <div className="flex flex-col md:flex-row justify-center py-3">
+        <Navbar/>
+        <Reveal>
+          <Header/>
+        </Reveal>
+      </div>
       <Reveal>
-        <Header/>
-      </Reveal>
-     </div>
-     <Reveal>
         <About/>
-     </Reveal>  
-     <Reveal>
+      </Reveal>  
+      <Reveal>
         <Projects/>
-     </Reveal>   
+      </Reveal>   
       <Reveal>
         <Contact/>
-     </Reveal>    
-    </>
+      </Reveal>  
+    </div>
   );
 }

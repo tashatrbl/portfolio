@@ -12,7 +12,7 @@ here, you'll find my `about me`, `projects ive done` and a `contact` page.
 
 # setup
 
-to access my website, please visit:
+to access my website, please visit: www.tasha-dev.work
 
 otherwise, you can make a clone of this repository via git:
 ```
@@ -30,5 +30,5 @@ access the project at http://localhost:3000 and start editing to your heart's co
 # let's chat!
 
 wanna chat? find me here:
-(LinkedIn)[https://www.linkedin.com/in/carmel-natasha-barnabas-490801225/]
-(Email)[mailto:hello@tasha-dev.work]
+[LinkedIn](https://www.linkedin.com/in/carmel-natasha-barnabas-490801225/)
+[Email](mailto:hello@tasha-dev.work)
