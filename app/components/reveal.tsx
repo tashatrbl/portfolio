@@ -2,16 +2,26 @@ import { motion } from "framer-motion";
 
 export const Reveal = ({ children, width = "100%" }) => {
   return (
-    <div style={{ position: "relative", width, overflow: "hidden" }}>
+    <div
+      style={{
+        position: "relative",
+        width,
+        overflow: "hidden",
+      }}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 }
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.5, delay: 0.25 }}
+        style={{
+          position: "relative",
+          zIndex: 10,
+        }}
       >
         {children}
       </motion.div>
@@ -19,7 +29,7 @@ export const Reveal = ({ children, width = "100%" }) => {
       <motion.div
         variants={{
           hidden: { left: 0 },
-          visible: { left: "100%" }
+          visible: { left: "100%" },
         }}
         initial="hidden"
         whileInView="visible"
@@ -27,8 +37,8 @@ export const Reveal = ({ children, width = "100%" }) => {
         transition={{ duration: 0.5, ease: "easeIn" }}
         style={{
           position: "absolute",
-          top: 4,
-          bottom: 4,
+          top: 0,
+          bottom: 0,
           left: 0,
           right: 0,
           zIndex: 20,

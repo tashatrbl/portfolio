@@ -25,7 +25,6 @@ const Projects = () => {
               border-pink-dark
               bg-cream
               rounded-lg
-              overflow-hidden
               transition-transform
               duration-200
               hover:-translate-y-1
