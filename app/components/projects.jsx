@@ -32,11 +32,11 @@ const Projects = () => {
             "
           >
             {/* Image */}
-            <div className="h-60 w-relative border-b border-pink-dark">
+            <div className="h-60 w-full border-b border-pink-dark">
               <Image
                 src={snippet}
                 alt={name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-t-lg"
               />
             </div>
 

@@ -53,11 +53,10 @@ const Navbar = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
                     </div>
-
-                    <li><a href="#abtme" onClick={closeMenu}>about me</a></li>
-                    <li><a href="#exp" onClick={closeMenu}>experience</a></li>
-                    <li><a href="#projects" onClick={closeMenu}>projects</a></li>
-                    <li><a href="#contact" onClick={closeMenu}>contact me</a></li>
+                    
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
 
             </nav>
