@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const  About = () => {
   return (
-    <div id='about' className="w-full px-10 sm:px-14 lg:px-24 py-24 scroll-mt-20 min-h-screen">
+    <div id='about' className="w-full px-10 sm:px-14 lg:px-24 py-16 sm:py-20 lg:py-24 scroll-mt-12 sm:scroll-mt-20">
 
     <div className='flex w-full flex-col lg:flex-row items-start gap-10'>
         {/* left hand side */}

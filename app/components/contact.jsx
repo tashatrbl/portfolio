@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full px-10 sm:px-14 lg:px-24 py-24 scroll-mt-20"
+      className="w-full px-10 sm:px-14 lg:px-24 py-24 scroll-mt-12 sm:scroll-mt-20"
     >
       {/* Two-column wrapper */}
       <div className="flex flex-col lg:flex-row min-h-screen items-center justify-center px-6 lg:px-20 gap-12">

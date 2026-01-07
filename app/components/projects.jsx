@@ -3,10 +3,11 @@ import { projects } from '@/assets/assets'
 import Image from 'next/image'
 
 const Projects = () => {
+  console.log('PROJECTS RENDERED', projects)
   return (
     <div
       id="projects"
-      className="w-full px-6 sm:px-10 lg:px-20 py-24 scroll-mt-20"
+      className="w-full px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-24 scroll-mt-0 sm:scroll-mt-20"
     >
       {/* Section title */}
       <h1 className="text-4xl lg:text-5xl mb-6 inter-bold">
@@ -14,8 +15,7 @@ const Projects = () => {
       </h1>
 
       {/* Grid controls overall card width */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2 px-8 py-2
-      ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map(({ name, desc, link, tech, snippet }, index) => (
           <div
             key={index}
@@ -31,14 +31,12 @@ const Projects = () => {
               hover:shadow-md
             "
           >
-            {/* Image */}
-            <div className="h-60 w-full border-b border-pink-dark">
-              <Image
-                src={snippet}
-                alt={name}
-                className="w-full h-full object-cover rounded-t-lg"
-              />
+          {/* Image container */}
+          {snippet && (
+            <div className="hidden sm:block relative w-full border-b border-pink-dark rounded-t-lg overflow-hidden">
+              <Image src={snippet} alt={name} className="w-full h-full object-cover rounded-t-lg" />
             </div>
+          )}
 
             {/* Content padding controls card density */}
             <div className="p-4">
